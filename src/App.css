@@ -1,4 +1,10 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +41,159 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body {
+  background-color: #b3e5fc;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
 }
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.row {
+  gap: 2rem;
+  margin: 0;
+  justify-content: center;
+}
+
+.col-md-3 {
+  width: 30%;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.loadingDiv {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.image {
+  min-width: 155px;
+}
+
+.stats {
+  background: #f2f5f8 !important;
+  color: #000 !important;
+}
+
+.articles {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number1 {
+  font-weight: 500;
+}
+
+.followers {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number2 {
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number3 {
+  font-weight: 500;
+}
+
+
+@media (max-width:1000px) {
+  .App {
+    width: 100%;
+  }  
+
+  .row {
+    gap: 2rem;
+  }
+
+  .col-md-3 {
+    width: 45%;
+  }
+}
+@media (max-width:665px) {
+  .App {
+    width: 100%;
+  }  
+
+  .row {
+    gap: 1rem;
+  }
+
+  .col-md-3 {
+    width: 75%;
+  }
+}
+
+@media (max-width:425px) {
+  .App {
+    width: 100%;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+
+  .col-md-3 {
+    width: 90%;
+  }
+}
+
+@media (max-width:375px) {
+  .App {
+    width: 100%;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    /* display: flex; */
+  }
+}
+
+@media (max-width:345px) {
+  .App {
+    width: 100%;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    /* display: flex; */
+  }
+  
+  .direction {
+    flex-direction: column;
+  }
+}
+
